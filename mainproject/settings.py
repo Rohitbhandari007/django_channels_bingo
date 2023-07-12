@@ -1,7 +1,7 @@
 
 
 from pathlib import Path
-import django_heroku
+# import django_heroku
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -125,10 +125,8 @@ STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 
-if not DEBUG:
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    SECURE_SSL_REDIRECT = True
+
 
